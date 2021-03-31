@@ -16,7 +16,6 @@ public class PersonajeServiceImpl implements PersonajeService{
 
     @Override
     public List<PersonajeDTO> obtenerPersonajes(String nombre) {
-        List<PersonajeDTO> personajes = personajeRepository.findPersonajes(nombre);
-        return null;
+        return personajeRepository.findPersonajes(nombre);
     }
 }
